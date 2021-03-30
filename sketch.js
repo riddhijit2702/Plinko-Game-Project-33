@@ -89,10 +89,10 @@ for(var e=0; e<=plinkos1.length-1; e=e+1)
     plinkos4[e].display();
   }
 
+
+
+
 base1.display()
-
-
-
 
 
   //drawSprites();
@@ -111,23 +111,13 @@ text("100",580,640)
 text("100",640,640)
 text("100",720,640)
 text("SCORE : "+score,40,40)
-}
+
 if(gameState==="end"){
   textSize(100);
   text("GameOver", 150, 250);
 }
 
-function mousePressed(){
-  if(gameState!=="end"){
-   
-   score++;
-   particle=new Particle(mouseX,200,10,10)
 
-   
-  }
-  
-  
-}
 if(particle!=null)
 {
    particle.display();
@@ -160,3 +150,16 @@ if(particle!=null)
     }
 
   }
+}
+
+function keyPressed(){
+  if(gameState!=="end"){
+   
+   score++;
+   particle=new Particle(mouseX,200,10,10)
+
+   
+  }
+  
+  
+}
